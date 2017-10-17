@@ -35,10 +35,9 @@ app.get('/', (request, response) => {
     });
 });
 app.use(express.static(__dirname + '/public'));
-app.get('/maintenance', (request, response) => {
-    response.render('home.hbs', {
-        pageTitle: "Maintenance Page",
-        welcomeMessage: "We will be right back"
+app.get('/projects', (request, response) => {
+    response.render('projects.hbs', {
+        pageTitle: "Projects Page"
     });
 });
 
